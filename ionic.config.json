@@ -1,0 +1,8 @@
+{
+  "name": "formVeri",
+  "app_id": "32fba572",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

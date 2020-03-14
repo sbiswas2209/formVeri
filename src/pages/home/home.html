@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>
+      Form
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col position-md="6" offset-md ="3">
+        <ion-card>
+          <ion-card-header>Enter details</ion-card-header>
+          <ion-card-content>
+            <form [formGroup]="myForm">
+              <ion-item>
+                <ion-label floating>Enter text</ion-label>
+                <ion-input formControlName ="Name" type="text" 
+                [(ngModel)]="name"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label floating>Enter password</ion-label>
+                <ion-input formControlName ="Password" type="password"  
+                [(ngModel)]="password"></ion-input>
+              </ion-item>
+            </form>
+            <ion-item>
+              
+              <button ion-button color ="light" round (click)="myFunction()"><ion-icon icon-only name="md-log-in"></ion-icon></button>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
